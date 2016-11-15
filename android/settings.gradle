@@ -1,0 +1,3 @@
+rootProject.name = 'BookBar'
+
+include ':app'
