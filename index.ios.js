@@ -1,28 +1,53 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  ScrollView,
-  Navigator
+  View
 } from 'react-native';
 
-import Book from './components/Book';
-import Translator from './components/Translator';
-import ScanButton from './components/ScanButton'
-
-class BookBar extends Component {
+export default class BookBar extends Component {
   render() {
     return (
-      <View>
-        <Book />
-        <ScanButton />
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
       </View>
     );
   }
 }
 
-AppRegistry.registerComponent('BookBar', () => BookBar);
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
 
-export default BookBar
+AppRegistry.registerComponent('BookBar', () => BookBar);
