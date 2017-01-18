@@ -1,0 +1,36 @@
+[{
+  "name": "编译原理",
+  "author": "Alfred V. Aho | Monica S.Lam",
+  "description": "《编译原理(第2版)》全面、深入地探讨了编译器设计方面的重要主题，包括词法分析、语法分析、语法制导定义和语法制导翻译、运行时刻环境、目标代码生成、代码优化技术、并行性检测以及过程间分析技术，并在相关章节中给出大量的实例。与上一版相比，《编译原理(第2版)》进行了全面的修订，涵盖了编译器开发方面的最新进展。每章中都提供了大量的系统及参考文献。《编译原理(第2版)》是编译原理课程方面的经典教材，内容丰富，适合作为高等院校计算机及相关专业本科生及研究生的编译原理课程的教材，也是广大技术人员的参考读物。《编译原理(第2版)》是编译原理课程方面的经典教材，内容丰富，适合作为高等院校计算机及相关专业本科生及研究生的编译原理课程的教材，也是广大技术人员的好参考读物。",
+  "url": "https://images-cn.ssl-images-amazon.com/images/I/51Bv6BJig-L.jpg",
+  "image": { "url": "https://d1b14unh5d6w7g.cloudfront.net/B001NGO85I.01.S001.LXXXXXXX.jpg?Expires=1484827428&Signature=X6lRdS0bZj0emJlvXmds7pS8eZFlPrQjMp28MCXGvrC8My4bfY3sC6552QJF25lC0LyXnTDJ8b2EKplTYskLUhAqqFvULFRzv4zttsCBlJ7L2aDntuHIRNN/zB+IXjl0QsjEOBObkRTdZsY+MasZKUq18piwsx5HkV+ML3zP8Gg=&Key-Pair-Id=APKAIUO27P366FGALUMQ" },
+  "ISBN": "9787111251217"
+}, {
+  "name": "计算机程序的构造与解释",
+  "author": "Harold Abelson | Gerald JaySussman Julie | Sussman",
+  "description": "《计算机程序的构造和解释(原书第2版)》1984年出版，成型于美国麻省理工学院(MIT)多年使用的一本教材，1996年修订为第2版。在过去的二十多年里，《计算机程序的构造和解释(原书第2版)》对于计算机科学的教育计划产生了深刻的影响。第2版中大部分重要程序设计系统都重新修改并做过测试，包括各种解释器和编译器。作者根据其后十余年的教学实践，还对其他许多细节做了相应的修改。",
+  "url": "https://images-cn.ssl-images-amazon.com/images/I/5101vl17BkL.jpg",
+  "image": { "url": "https://images-cn.ssl-images-amazon.com/images/I/5101vl17BkL.jpg" },
+  "ISBN": "9787111135104"
+}, {
+  "name": "深入理解计算机系统",
+  "author": "Randal E. Bryant",
+  "description": "和第2版相比，本版内容上最大的变化是，从以IA32和x86-64为基础转变为完全以x86-64为基础。主要更新如下：\n• 基于x86-64，大量地重写代码，首次介绍对处理浮点数据的程序的机器级支持。\n• 处理器体系结构修改为支持64位字和操作的设计。\n• 引入更多的功能单元和更复杂的控制逻辑，使基于程序数据流表示的程序性能模型预测更加可靠。\n• 扩充关于用GOT和PLT创建与位置无关代码的讨论，描述了更加强大的链接技术（比如库打桩）。\n• 增加了对信号处理程序更细致的描述，包括异步信号安全的函数等。\n• 采用最新函数，更新了与协议无关和线程安全的网络编程。",
+  "url": "https://images-cn.ssl-images-amazon.com/images/I/9167e8-B9gL.jpg",
+  "image": { "url": "https://images-cn.ssl-images-amazon.com/images/I/9167e8-B9gL.jpg" },
+  "ISBN": "9787111544937"
+}, {
+  "name": "UNIX环境高级编程",
+  "author": "W.Richard Stevens | Stephen A.Rago",
+  "description": "本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的第3版。在本书第2版出版后的8年中，UNIX行业发生了巨大的变化，特别是影响UNIX编程接口的有关标准变化很大。本书在保持前一版风格的基础上，根据最新的标准对内容进行了修订和增补，反映了最新的技术发展。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在此基础上介绍了众多应用实例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附录中给出了函数原型和部分习题的答案。本书内容权威，概念清晰，阐述精辟，对于所有层次UNIX/Linux程序员都是一本不可或缺的参考书。",
+  "url": "https://www.amazon.cn/dp/B00KMR129E/ref=sr_1_1?ie=UTF8&qid=1484738380&sr=8-1&keywords=unix",
+  "image": { "url": "https://images-cn.ssl-images-amazon.com/images/I/61tjADqDC-L.jpg" },
+  "ISBN": "9787115352118"
+}, {
+  "name": "代码大全",
+  "author": "Steve McConnell",
+  "description": "  《代码大全(第2版)》是著名IT畅销书作者、《IEEE Software》杂志前主编、具有20年编程与项目管理经验的Steve McConnell十余年前的经典著作的全新演绎：第2版做了全面的更新，增加了很多与时俱进的内容，包括对新语言、新的开发过程与方法论的讨论等等。这是一本百科全书式的软件构建手册，涵盖了软件构建活动的方方面面，尤其强调提高软件质量的种种实践方法。作者特别注重源代码的可读性，详细讨论了类和函数命名、变量命名、数据类型和控制结构、代码布局等编程的最基本要素，也讨论了防御式编程、表驱动法、协同构建、开发者测试、性能优化等有效开发实践，这些都服务于软件的首要技术使命：管理复杂度。为了培养程序员编写高质量代码的习惯，书中展示了大量高质量代码示例（以及用作对比的低质量代码），提高软件质量是降低开发成本的重要途径。\n    除此之外，《代码大全(第2版)》归纳总结来自专家经验、业界研究以及学术成果，列举了大量软件开发领域的真实案例与统计数据，提高本书的说服力。《代码大全(第2版)》中所论述的技术不仅填补了初级与高级编程实践之间的空白，而且也为程序员们提供了一个有关软件开发技术的信息来源。《代码大全(第2版)》对经验丰富的程序员、技术带头人、自学的程序员及没有太多编程经验的学生都是大有裨益的。可以说，只要您具有一定的编程基础，想成为一名优秀的程序员，阅读《代码大全(第2版)》都不会让您失望。",
+  "url": "https://www.amazon.cn/dp/B0061XKRXA/ref=sr_1_1?ie=UTF8&qid=1484739570&sr=8-1&keywords=%E4%BB%A3%E7%A0%81%E5%A4%A7%E5%85%A8",
+  "image": { "url": "https://images-cn.ssl-images-amazon.com/images/I/51pr526Ne8L.jpg" },
+  "ISBN": "9787121022982"
+}]
