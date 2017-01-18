@@ -18,6 +18,8 @@ import {
   NavigationBar,
 } from '@shoutem/ui/navigation';
 
+import ScanButton from '../components/ScanButton';
+
 import { connect } from 'react-redux';
 import { navigatePush } from './redux';
 
@@ -68,6 +70,7 @@ class BooksList extends Component {
           data={this.getBooks()}
           renderRow={book => this.renderRow(book)}
         />
+      <ScanButton />
       </Screen>
     );
   }

@@ -7,7 +7,7 @@ export default class MyScene extends Component {
     return (
       <View>
         <Button
-          styleName="dark"
+          styleName="md-gutter dark"
           onPress={onPressMore}
           title="扫描"
           accessibilityLabel="扫描条形码"
