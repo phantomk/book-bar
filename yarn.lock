@@ -3035,6 +3035,21 @@ react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/react-deep-force-update/download/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
 
+react-native-barcode-scanner-universal@^1.0.5:
+  version "1.0.5"
+  resolved "http://registry.npm.taobao.org/react-native-barcode-scanner-universal/download/react-native-barcode-scanner-universal-1.0.5.tgz#8f6234e3e3d53c15aa115ae2798ffed4e4ed6e14"
+  dependencies:
+    react-native-barcodescanner cpunion/react-native-barcodescanner#patch-1
+    react-native-camera lwansbrough/react-native-camera#bff819c574eb60a1ffdb664aa2b03d9d15c57c28
+
+"react-native-barcodescanner@github:cpunion/react-native-barcodescanner#patch-1":
+  version "1.0.1"
+  resolved "https://codeload.github.com/cpunion/react-native-barcodescanner/tar.gz/48da81b073059e65442209cb5df80aef0af89f47"
+
+"react-native-camera@github:lwansbrough/react-native-camera#bff819c574eb60a1ffdb664aa2b03d9d15c57c28":
+  version "0.3.8"
+  resolved "https://codeload.github.com/lwansbrough/react-native-camera/tar.gz/bff819c574eb60a1ffdb664aa2b03d9d15c57c28"
+
 react-native-gesture-responder@0.1.1:
   version "0.1.1"
   resolved "http://registry.npm.taobao.org/react-native-gesture-responder/download/react-native-gesture-responder-0.1.1.tgz#802552d8eb7153c0d81a396e98f4b80b404b6798"
