@@ -9,6 +9,8 @@ import {
 import { navigatePop } from './redux';
 import BooksList from './BooksList';
 import BookDetails from './BookDetails';
+import BookScanner from './BookScanner'
+
 
 class App extends Component {
   static propTypes = {
