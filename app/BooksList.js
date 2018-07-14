@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {
+  Button,
   Caption,
   Icon,
   Image,
   ListView,
   Tile,
   Title,
+  Text,
   Row,
   View,
   Subtitle,
@@ -18,11 +20,9 @@ import {
   NavigationBar,
 } from '@shoutem/ui/navigation';
 
-import ScanButton from '../components/ScanButton';
-import CodeScanner from '../components/CodeScanner';
-
 import { connect } from 'react-redux';
 import { navigatePush } from './redux';
+import BookScanner from './BookScanner';
 
 class BooksList extends Component {
   static propTypes = {
@@ -71,8 +71,18 @@ class BooksList extends Component {
           data={this.getBooks()}
           renderRow={book => this.renderRow(book)}
         />
-      <ScanButton />
-      <CodeScanner />
+
+        <Button
+          styleName="md-gutter dark"
+          onPress=""
+          title="扫描"
+          accessibilityLabel="扫描条形码"
+        >
+          <Text>扫描</Text>
+        </Button>
+
+        <BookScanner />
+
       </Screen>
     );
   }

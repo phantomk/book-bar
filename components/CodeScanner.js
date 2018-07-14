@@ -8,7 +8,7 @@ import {
     Platform,
 } from 'react-native';
 
-export default class ScanView extends Component {
+export default class CodeScanner extends Component {
   constructor(props) {
     super(props);
     this.state = {

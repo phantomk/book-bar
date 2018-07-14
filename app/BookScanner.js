@@ -1,66 +1,63 @@
-import BarcodeScanner from 'react-native-barcode-scanner-universal';
-
 import React, { Component } from 'react';
 import {
-    StyleSheet,
-    View,
-    Text,
-    Platform,
+  StyleSheet,
+  Text,
+  Vibration,
+  View,
 } from 'react-native';
+
+import BarcodeScanner from 'react-native-barcodescanner';
 
 export default class BookScanner extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      code: 'None',
+      barcode: '',
+      cameraType: 'back',
+      text: 'Scan Barcode',
+      torchMode: 'off',
+      type: '',
     };
-    this._show = this._show.bind(this);
+  }
+
+  barcodeReceived(e) {
+    if (e.data !== this.state.barcode || e.type !== this.state.type) Vibration.vibrate();
+
+    this.setState({
+      barcode: e.data,
+      text: `${e.data} (${e.type})`,
+      type: e.type,
+    });
   }
 
   render() {
-    let scanArea = null;
-    if (Platform.OS === 'ios') {
-      scanArea = (
-        <View style={styles.rectangleContainer}>
-          <View style={styles.rectangle} />
-        </View>
-            );
-    }
     return (
-      <View>
-        <Text style={[{ color: 'red' }, { fontSize: 16 }]}>{this.state.code}</Text>
+      <View style={styles.container}>
         <BarcodeScanner
-          onBarCodeRead={code => this._show(code)}
-          style={styles.camera}
-        >
-          {scanArea}
-        </BarcodeScanner>
+          onBarCodeRead={this.barcodeReceived.bind(this)}
+          style={{ flex: 1 }}
+          torchMode={this.state.torchMode}
+          cameraType={this.state.cameraType}
+        />
+        <View style={styles.statusBar}>
+          <Text style={styles.statusBarText}>{this.state.text}</Text>
+        </View>
       </View>
     );
   }
-
-  _show(val) {
-    this.setState({
-      code: val.data,
-    });
-  }
 }
 
-let styles = StyleSheet.create({
-  camera: {
+const styles = StyleSheet.create({
+  container: {
     flex: 1,
   },
-  rectangleContainer: {
-    flex: 1,
+  statusBar: {
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
   },
-  rectangle: {
-    height: 250,
-    width: 250,
-    borderWidth: 2,
-    borderColor: '#00FF00',
-    backgroundColor: 'transparent',
+  statusBarText: {
+    fontSize: 20,
   },
 });

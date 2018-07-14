@@ -2,13 +2,17 @@ import React, { Component, PropTypes } from 'react';
 import { Alert } from 'react-native';
 import { Button, Text, View } from '@shoutem/ui';
 
+import CodeScanner from './CodeScanner';
+
 export default class MyScene extends Component {
+  openCamera() {}
+
   render() {
     return (
       <View>
         <Button
           styleName="md-gutter dark"
-          onPress={onPressMore}
+          onPress={this.openCamera()}
           title="扫描"
           accessibilityLabel="扫描条形码"
         >
@@ -18,7 +22,3 @@ export default class MyScene extends Component {
     );
   }
 }
-
-const onPressMore = () => {
-  Alert.alert('摄像头权限，扫描条形码');
-};
